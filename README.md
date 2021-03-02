@@ -8,6 +8,7 @@ After executing the application click the top right button called disk manager
 ![Disk manager](./readme_src/dskmngr.png)
 
 After selecting disk manager, click hard drives
+
 ![Hard drives](./readme_src/hdrive.png)
 
 In the hard drive menu, put the path of the src folder in the pointed field
