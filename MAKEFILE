@@ -1,0 +1,51 @@
+tst_rndr: game.o font.o model.o raster.o rast_asm.o clear.o render.o events.o bitmaps.o back1.o back2.o oness.o twoss.o psg.o effects.o music.o
+	cc68x -g game.o font.o model.o raster.o rast_asm.o clear.o render.o events.o bitmaps.o back1.o back2.o oness.o twoss.o psg.o effects.o music.o -o aero_funk
+
+game.o: game.c game.h
+	cc68x -g -c game.c
+
+font.o: font.c font.h
+	cc68x -g -c font.c
+
+model.o: model.c model.h
+	cc68x -g -c model.c
+
+events.o: events.c events.h
+	cc68x -g -c events.c
+
+raster.o: raster.c raster.h
+	cc68x -g -c raster.c
+
+rast_asm.o: rast_asm.s
+	gen -D -L2 rast_asm.s
+
+clear.o: clear.s
+	gen -D -L2 clear.s
+
+render.o: render.c render.h
+	cc68x -g -c render.c
+
+bitmaps.o: bitmaps.c bitmaps.h
+	cc68x -g -c bitmaps.c
+	
+back1.o: back1.c back1.h
+	cc68x -g -c back1.c
+	
+back2.o: back2.c back2.h
+	cc68x -g -c back2.c
+	
+oness.o: oness.c oness.h
+	cc68x -g -c oness.c
+
+twoss.o: twoss.c twoss.h
+	cc68x -g -c twoss.c
+	
+psg.o: psg.c psg.h
+	cc68x -g -c psg.c
+	
+effects.o: effects.c effects.h
+	cc68x -g -c effects.c
+	
+music.o: music.c music.h
+	cc68x -g -c music.c
+	
