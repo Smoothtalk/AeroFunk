@@ -5,4 +5,4 @@ Download the Steem emulator by googling "steem_student". Contact me if you're un
 Install the application.
 
 After executing the application click the top right button called disk manager
-[Disk manager](Readme Images/Disk Manager)
+[Disk manager](Readme Images/Disk Manager.png)
